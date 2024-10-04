@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>New</title>
+    <link rel="stylesheet" href="./styles.css"> 
+  </head>
+  <body>
+    <%- include('header', {links: links})%>
+    <h1>New Message</h1>
+    <form method="POST" action="/new">
+        <label for="new-m">New message</label>
+        <input type="text" id="new-m" name="message">
+        <br><br>
+        <label for="author">Author</label>
+        <input type="text" id="author" name="author">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>     
+  </body>
+</html>
+
